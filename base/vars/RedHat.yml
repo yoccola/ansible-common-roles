@@ -2,6 +2,17 @@
 # Pass in a comma-separated list of repos to use (e.g. "remi,epel").
 yum_enablerepo: "remi,epel"
 yum_packages:
+  - kernel-headers
+  - make
+  - curl-devel
+  - gcc
+  - openssl-devel
+  - expat-devel
+  - cpan
+  - gettext
+  - asciidoc
+  - xmlto
+  - cyrus-sasl-lib
   - subversion 
   - mysql
   - postfix
@@ -9,3 +20,4 @@ yum_packages:
   - git
   - vim
   - glances
+  - nc

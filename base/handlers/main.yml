@@ -1,2 +1,8 @@
+---
+# file: common_roles/base/handlers/main.yml
+
 #- name: restart httpd
 #  service: name=httpd state=restarted
+
+- name: restart ntpd
+  service: name=ntpd state=restarted
